@@ -10,9 +10,10 @@
 import Foundation
 
 //Create the ToDoItem class in this file
-class ToDoItem{
+class ToDoItem: Identifiable{
     var title = " "
     var isImportant = false
+    var id = UUID()
     
     init(title: String, isImportant: Bool = false) {
             self.title = title
